@@ -5,21 +5,17 @@
         "update_url": null
     },
     "exported_at": "2024-12-29T23:32:18+00:00",
-    "name": "Discord Bot \u2022 NodeJS",
-    "author": "pterodactyl@stan1712.com",
-    "description": "A perfect boilerplate to start serving your DiscordJs bot !\r\nCheck out the README to get started : https:\/\/github.com\/stanislasbdx\/pterodactyl-egg-discord",
+    "name": "Discord Bot \u2022 NodeJS (pelican yolks)",
+    "author": "pterodactyl@lz1.dev",
+    "description": "A perfect boilerplate to start serving your DiscordJs bot !\r\nCheck out the README to get started : https:\/\/github.com\/siiart\/pterodactyl-egg-discord",
     "features": null,
     "docker_images": {
-        "Node LTS latest (recommended)": "5140\/discord-egg:latest",
-        "Node 24": "5140\/discord-egg:node-24",
-        "Node 22": "5140\/discord-egg:node-22",
-        "Node EOL 20": "5140\/discord-egg:node-20",
-        "Node EOL 18": "5140\/discord-egg:node-18",
-        "Node EOL 16": "5140\/discord-egg:node-16",
-        "Devbuilds (Node LTS)": "5140\/discord-egg:snapshot"
+        "Node 22": "ghcr.io\/pelican-eggs\/yolks:nodejs_22",
+        "Node 24": "ghcr.io\/pelican-eggs\/yolks:nodejs_24",
+        "Node 26": "ghcr.io\/pelican-eggs\/yolks:nodejs_26"
     },
     "file_denylist": [],
-    "startup": "node ${STARTUP_FILE}",
+    "startup": "COREPACK_ENABLE_DOWNLOAD_PROMPT=0 yarn install && echo '-- Server started' && node ${STARTUP_FILE}",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"-- Server started\"\r\n}",
@@ -48,7 +44,7 @@
             "name": "Github Repository URL",
             "description": "The Github repository where project defaults will be downloaded.",
             "env_variable": "REPO_URL",
-            "default_value": "https:\/\/raw.githubusercontent.com\/stanislasbdx\/pterodactyl-egg-discord\/refs\/heads\/master\/",
+            "default_value": "https:\/\/raw.githubusercontent.com\/siiart\/pterodactyl-egg-discord\/refs\/heads\/master\/",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|string",
