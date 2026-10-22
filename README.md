@@ -1,17 +1,13 @@
-# 🤖 — Discord.JS Pterodactyl Bot Hosting Egg and Docker image
+# Pterodactyl Bot Hosting Egg & Docker Image for Discord.js, utilizing pelican-eggs.
 
 This is an egg dedicated to NodeJS bot hosting (discord.js & nodejs) on pterodactyl panel.
+Supports Node.js v22, v24, and v26
 
 > Docker image: <https://hub.docker.com/r/5140/discord-egg>
 >
-> Github Repository <https://github.com/stanislasbdx/pterodactyl-egg-discord⁠>
+> Github Repository <https://github.com/siiart/pterodactyl-egg-discord⁠>
 
-An issue ? A suggestion ? Open an issue on Github or DM me on discord (stan1712) !
-
-> [!IMPORTANT]  
-> **If you run on ARM system, go check [Mizari's project](https://github.com/Mizari-Dev/pterodactyl-egg-nodejs-arm64)**, or you won't be able to use this and be sad 😓 ([here's what you can expect](https://github.com/stanislasbdx/pterodactyl-egg-discord/issues/5)).
-
-## 🏗️・Installation
+## Installation
 
 To install this egg :
 
@@ -21,7 +17,7 @@ To install this egg :
 4. Choose the .json file named "egg-discordjs"
 5. And import !
 
-## 🌌・Usage
+## Usage
 
 To use it, just create a server with this egg in the "Nest Configuration" section.
 
@@ -45,11 +41,11 @@ By default when creating a server, the docker image will be the latest (stable),
 #### Defaults files from repository
 
 In addition you can choose from where to get the default project files like **index.js** and **package.json**.
-> Default value : <https://raw.githubusercontent.com/stanislasbdx/pterodactyl-egg-discord/refs/heads/master/>
+> Default value : <https://raw.githubusercontent.com/siiart/pterodactyl-egg-discord/refs/heads/master/>
 
 ![image](https://github.com/user-attachments/assets/05efea31-dbb9-4d94-82da-12a6dc8b5366)
 
-## 🤝・Contributing
+## Contributing
 
 ### Building a Docker image
 
