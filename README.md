@@ -1,6 +1,7 @@
-# Pterodactyl Bot Hosting Egg & Docker Image for Discord.js, utilizing pelican-eggs.
+# Pterodactyl Bot Hosting Egg & Docker Image for Discord.js
 
-This is an egg dedicated to NodeJS bot hosting (discord.js & nodejs) on pterodactyl panel.
+### This is an egg dedicated to NodeJS bot hosting (discord.js & nodejs) on pterodactyl panel, utilizing [pelican-eggs](https://github.com/pelican-eggs/yolks/pkgs/container/yolks#nodejs).
+
 Supports Node.js v22, v24, and v26
 
 > Docker image: <https://hub.docker.com/r/5140/discord-egg>
